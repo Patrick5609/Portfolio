@@ -7,13 +7,66 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-    <!-- Navigation Bar -->
+        <!-- Navigation Bar -->
         <nav class="navbar project-navbar">
             <ul class="nav-list">
                 <li>
-                    <a href="index.html#projects">About</a>
+                    <a href="index.html#projects">&#x279C;</a>
                 </li>
             </ul>
         </nav>
+        <main class="project-description">
+            <h2>Data Visualization (University Project)</h2>
+            <figure class="project-showcase-img">
+                <button class="img-button">
+                    <img src="images/image.png" 
+                        alt="Data Visualization Showcase"/>
+                </button>
+                <figcaption class="img-caption">A small application that visualizes
+                            commuters between the german states Berlin and Brandenburg
+                </figcaption>    
+            </figure>
+            <article class="project-article">
+                <p>This is an old group project from my time at 
+                    the university. The course was called 
+                    “Data Visualization”. We were a team of three people: 
+                    two computer science students and one digital media 
+                    student. While the digital media major was in charge of 
+                    designing the website, we CS students had to implement 
+                    the design using HTML, CSS, and JavaScript.
+                </p>
+                <br/>
+                <p>The data we used in the application is from the Website of 
+                    <a class="project-article-link" 
+                        target="_blank"
+                        href="https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Interaktive-Statistiken/Pendler/Pendler-Nav.html;jsessionid=26C4EDA2980F3515E643D42B03B2680F?Thema%3DEinpendler%26DR_Land%3D12000000%26DR_Gebiete%3Dall%26toggleswitch%3D0">
+                        Bundesagentur für Arbeit</a>, 
+                    where we got ourselves a CSV file that had to be filtered to 
+                    only give us the relevant statistics for the project. 
+                    The interactive map used is created with a geojson-file 
+                    that we got from a site called 
+                    <a class="project-article-link"
+                        target="_blank"
+                        href="https://opendatalab.de/projects/geojson-utilities/">
+                        OpenDataLab</a>. Originally we had 
+                    some consistency issues, where sometimes the site would 
+                    not be working properly, and we needed to reload the 
+                    page a few times until it functioned as intended. 
+                    Other Groups encounter the same problem. Our professor explained 
+                    that it was due to us loading multiple files and showed us how to 
+                    fix it. However, by that time, our group had a different workaround. 
+                    We put the filtered data from the CSV file into the geojson-file. 
+                    It also made working the data a little easier, since everything was 
+                    in one file. That little trick was certainly not a smart solution for 
+                    big projects, but for our little application, it was enough.
+                    </p>
+                    <br/>
+                    <p>Sadly, nobody kept the code for this project, 
+                        so the only thing left of it is this one 
+                        picture, and the only reason this image 
+                        still exists is because my team partner 
+                        planned to show this project on his own portfolio.</p>
+            </article>
+        </main>
     </body>
 </html>

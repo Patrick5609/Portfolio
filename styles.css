@@ -1,3 +1,7 @@
+/*TODO: rename the color variables
+        add mobile support for project pages
+*/
+
 :root{
   /* Page Display Sizes*/
   --page-display-width-short: 30px;
@@ -99,6 +103,22 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+/* temporary note styling*/
+.note {
+  width: 60%;
+  background-color: rgb(255, 120,120);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5vw;
+}
+
+.note p{
+  font-size: 1vw;
+  color: black;
+}
+
+
 
 /* Projects Section */
 #projects {
@@ -217,5 +237,65 @@ section {
 
 /* Project Pages Designs*/
 .project-navbar{
-  justify-content: left;
+  /*Doing some dubiose stuff here.
+    The Arrow Symbole used in the navbar only
+    exists in the right direction, so I had the flip
+    it and also change the "justify-content" property to "right".*/
+  justify-content: right;
+  transform: scale(-1, 1);
+}
+
+.project-description{
+  width: 80vw;
+  margin: auto;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description h2{
+  text-align: center;
+  margin-bottom: 5vh;
+  font-size: 3vw;
+}
+
+.project-showcase-img{
+  width: 60vw;
+}
+
+.project-showcase-img img{
+  width: 100%;
+  object-fit:cover;
+  border: 3px solid black;
+  transition: all 0.5s ease;
+}
+
+.img-button{
+  border: none;
+  background: none;
+}
+
+.img-button:active img, .img-button:focus img{
+  transform: scale(1.5);
+}
+
+.img-caption{
+  font-size: 1vw;
+  margin-top: -15px;
+}
+
+.project-article {
+  margin-top: 6vh;
+  width: 75%;
+}
+
+.project-article a{
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.project-article a:hover{
+  color: var(--navbar-hover-color);
 }
